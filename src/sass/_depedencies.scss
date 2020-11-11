@@ -1,0 +1,10 @@
+body {
+    background: $main-gradient;
+    font-family: $inconsolata;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
