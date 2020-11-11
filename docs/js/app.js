@@ -115,8 +115,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Programming\Portfolio\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! D:\Programming\Portfolio\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! D:\Programming\riyanamanda.github.io\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! D:\Programming\riyanamanda.github.io\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })
