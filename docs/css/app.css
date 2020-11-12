@@ -34,6 +34,10 @@ a:hover {
   outline: none;
 }
 
+.content {
+  overflow: hidden;
+}
+
 .content .content-left {
   color: #fff;
   padding: 80px 0 0 50px;
@@ -42,19 +46,36 @@ a:hover {
 .content .content-left .left-heading {
   font-family: "Big Shoulders Stencil Text", cursive;
   font-weight: 600;
+  text-shadow: 0em 0em 0.4em rgba(255, 255, 255, 0.6);
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .content .content-left .left-description {
   font-size: 14px;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .content .content-left .left-skill {
   font-size: 12px;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .content .content-left .left-download {
   background: linear-gradient(to right, #141e30, #243b55);
   color: #fff;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .content .content-left .left-download:focus {
@@ -65,16 +86,32 @@ a:hover {
   background: #fff;
   color: #2C5364;
   font-weight: 500;
+  box-shadow: 0em 0em 0.4em rgba(255, 255, 255, 0.6);
 }
 
 .content .content-right {
-  height: 400px;
   background: linear-gradient(to right, #141e30, #243b55);
+  -webkit-animation: fadeInRight;
+          animation: fadeInRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .content .content-right .right-heading {
   color: #fff;
   font-family: "Roboto", sans-serif;
+}
+
+.content-card .content-card-header {
+  overflow: hidden;
+}
+
+.content-card .content-card-header img {
+  transition: all 0.3s ease;
+}
+
+.content-card .content-card-header img:hover {
+  transform: scale(1.2);
 }
 
 .content-card .content-card-body {
@@ -111,6 +148,7 @@ a:hover {
 
 .footer .footer-social {
   list-style: none;
+  text-shadow: 0em 0em 0.4em rgba(255, 255, 255, 0.6);
 }
 
 .footer .footer-social .social-item {
