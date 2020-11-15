@@ -1,0 +1,59 @@
+.hero {
+    color: $text-color;
+    height: 80vh;
+    padding-top: 100px;
+
+    & &-open {
+        color: $white-color;
+        font-size: 12px;
+    }
+
+    & &-heading {
+        font-family: $roboto;
+        font-size: 50px;
+
+        span {
+            color: $main-color;
+        }
+    }
+
+    & &-description {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    & &-social {
+
+        .social {
+            &-body {
+                font-size: 12px;
+
+                span {
+                    &::before {
+                        content: '~';
+                        margin-right: 5px;
+                    }
+
+                    &::after {
+                        content: ':';
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+            &-item {
+                list-style: none;
+            }
+
+            &-link {
+                color: $text-color;
+                margin-right: 20px;
+                transition: $transition;
+
+                &:hover {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}

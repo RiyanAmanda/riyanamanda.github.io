@@ -1,10 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: $main-gradient;
     font-family: $inconsolata;
+    color: $text-color;
 }
 
 a {
     &:hover {
         text-decoration: none;
     }
+}
+
+/* Tombol Back to Top */
+.btn-back-top {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: $main-color;
+    font-size: 18px;
+    opacity: 0.6;
+    cursor: pointer;
+    bottom: -999px;
+    right: 40px;
+    transition: $transition;
+
+    a {
+        color: $white-color;
+    }
+}
+
+.btn-back-top.active {
+    bottom: 35px;
+}
+
+.btn-back-top:hover {
+    opacity: 1;
 }

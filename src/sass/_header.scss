@@ -2,23 +2,39 @@
     background: inherit;
 
     & &-brand {
-        font-size: 32px;
-        font-weight: 600;
+        font-family: $roboto;
+        color: $text-color;
+        font-size: 20px;
+        border: 2px solid $main-color;
+        padding: 0 5px;
+        margin: 10px auto;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        transition: $transition;
+
+        span {
+            color: $main-color;
+        }
+
+        &:hover {
+            color: $white-color;
+        }
     }
 
     & &-nav {
+        font-size: 13px;
+
         .nav-link {
-            color: #fff;
-            transition: all .3s ease;
+            color: $text-color;
+            transition: $transition;
 
             &:hover {
-                color: #fff;
-                transform: scale(1.1);
+                color: $white-color;
             }
         }
     }
 
     & &-toggler {
+        color: $text-color;
         font-size: 24px;
 
         &:focus {

@@ -25,6 +25,6 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
-    "animate.css": "^4.1.1"
+    "aos": "^2.3.4"
   }
 }

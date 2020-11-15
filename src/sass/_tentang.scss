@@ -1,0 +1,108 @@
+.tentang {
+
+    & &-header {
+        font-family: $roboto;
+        color: $text-color;
+        font-weight: 600;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 1px;
+            background: $main-color;
+        }
+    }
+
+    & &-body {
+        font-size: 14px;
+
+        span {
+            color: $main-color;
+            font-weight: 600;
+        }
+
+        .list-heading {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .tentang {
+            &-list {
+                font-size: 12px;
+                list-style: none;
+
+                .list-item {
+                    &::before {
+                        content: '#';
+                    }
+
+                    &::after {
+                        content: '|';
+                        margin: 0 5px;
+                    }
+
+                    &:last-child::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+
+    & &-download {
+        font-family: $roboto;
+        color: $white-color;
+        font-size: 12px;
+        background: none;
+        border: 1.5px solid $main-color;
+        transition: $transition;
+
+        &:hover {
+            background: $main-color;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &-image-wrapper {
+        position: relative;
+        width: 250px;
+        height: 100%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px solid $main-color;
+            right: 25px;
+            top: -25px;
+            border-radius: 5px;
+            z-index: -1;
+            transition: $transition;
+        }
+
+        .tentang-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            filter: grayscale(100%);
+            transition: $transition;
+        }
+
+        &:hover {
+            .tentang-image {
+                filter: none;
+            }
+
+            &::after {
+                right: 20px;
+                top: -20px;
+            }
+        }
+    }
+}
