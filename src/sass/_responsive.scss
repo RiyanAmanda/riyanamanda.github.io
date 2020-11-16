@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 812px) {
+@media (min-width: 320px) and (max-width: 812px) {
     .navbar {
         & &-brand {
             margin: 10px 2px;
@@ -8,6 +8,7 @@
     .hero {
         height: auto;
         padding-top: 10px;
+        margin: 85px auto;
 
         & &-open {
             font-size: 10px;
