@@ -14,3 +14,11 @@ $white-color: #fff;
 
 // Transition
 $transition: all .3s ease;
+
+btn-warning,
+.btn-outline-warning {
+
+    &:hover {
+        color: #fff;
+    }
+}
