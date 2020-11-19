@@ -144,7 +144,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 pl-md-5 d-flex justify-content-center justify-content-md-start">
-                    <h2 class="project-header" data-aos="fade-up" data-aos-delay="50">Gambaran Proyek</h2>
+                    <h2 class="project-header" data-aos="fade-right" data-aos-delay="50">Gambaran Proyek</h2>
                 </div>
             </div>
             <div class="row mt-md-3 p-3">
@@ -153,7 +153,9 @@
                         <img src="assets/images/projects/lingkaran.png" class="img-fluid rounded-top" alt="Lingkaran">
                         <div class="card-body">
                             <h5 class="card-title my-0">Lingkaran Website</h5>
-                            <button class="btn btn-sm btn-outline-warning py-0">In Development</button>
+                            <a href="#" data-toggle="modal" data-target="#modal-website">
+                                <button class="btn btn-sm btn-outline-warning py-0">In Development</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -163,7 +165,9 @@
                         <img src="assets/images/projects/myrepublic.png" class="img-fluid rounded-top" alt="MyRepublic">
                         <div class="card-body">
                             <h5 class="card-title my-0">MyRepublic Palembang</h5>
-                            <button class="btn btn-sm btn-outline-warning py-0">In Development</button>
+                            <a href="http://internetpalembang.net" target="_blank">
+                                <button class="btn btn-sm btn-outline-success py-0">Launched</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -187,7 +191,7 @@
     <!-- Modal Notif -->
     <div class="modal fade text-dark" id="modal-cv" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Notification</h5>
@@ -213,6 +217,24 @@
     </div>
     <!-- End Modal Notif -->
 
+    <!-- Modal Notif -->
+    <div class="modal fade text-dark" id="modal-website" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Notification</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid text-center">
+                        <p>Website masih dalam pengembangan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Notif -->
+
     <!-- Back to top -->
     <div id="back-top" class="btn-back-top d-flex justify-content-center align-items-center rounded-circle">
         <a href="#top">
@@ -232,6 +254,10 @@
         AOS.init();
 
         $('#modal-cv').on('show.bs.modal', event => {
+            let button = $(event.relatedTarget);
+            let modal = $(this);
+        });
+        $('#modal-website').on('show.bs.modal', event => {
             let button = $(event.relatedTarget);
             let modal = $(this);
         });
