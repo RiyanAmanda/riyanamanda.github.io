@@ -27,8 +27,24 @@
             color: $text-color;
             transition: $transition;
 
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 1px;
+                margin-top: 2px;
+                opacity: 0;
+                background: $main-color;
+                transition: $transition;
+            }
+
             &:hover {
                 color: $white-color;
+
+                &::after {
+                    width: 100%;
+                    opacity: 1;
+                }
             }
         }
     }
