@@ -1,6 +1,5 @@
-<p align="center">
-    <img src="https://github.com/RiyanAmanda/riyanamanda.github.io/tree/master/docs/assets/logo/logo.png?raw=true" alt="Riyan Amanda Portofolio" width="350px" height="100px">
-    <hr/>
+<p align="right">
+    <img src="https://github.com/RiyanAmanda/riyanamanda.github.io/blob/master/docs/assets/logo/logo.png?raw=true" alt="Riyan Amanda Portofolio" width="30px" height="30px">
 </p>
 
 ## Tentang Riyan Amanda
