@@ -1,7 +1,7 @@
 {
-  "name": "Portfolio",
+  "name": "Portofolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portofolio Riyan Amanda, seorang web developer berdomisili di Palembang. Inventif dalam belajar dan suka hal-hal humoris.",
   "main": "index.js",
   "scripts": {
     "dev": "npm run development",
@@ -12,7 +12,7 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "keywords": [
-    "Riyan Amanda Portfolio"
+    "Portofolio, Riyan Amanda, Web Developer, Programmer Palembang"
   ],
   "author": "Riyan Amanda",
   "license": "ISC",

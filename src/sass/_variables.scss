@@ -5,12 +5,12 @@ $roboto: 'Roboto',
 sans-serif;
 
 // Colors
-$main-gradient: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+$main-gradient: linear-gradient(to right, #0f2027, #203a43, #1f5064);
 $second-gradient: linear-gradient(to right, #141e30, #243b55);
 
-$main-color:#45a2ca;
+$main-color:#2c9ac9;
 $text-color: #ccd6f6d5;
-$white-color: #fff;
+$white-color: #ffffffd5;
 
 // Transition
 $transition: all .3s ease;
@@ -19,6 +19,6 @@ btn-warning,
 .btn-outline-warning {
 
     &:hover {
-        color: #fff;
+        color: $white-color;
     }
 }
