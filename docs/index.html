@@ -177,6 +177,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card">
+                        <img src="assets/images/projects/eumkm.png" class="img-fluid rounded-top" alt="e-UMKM">
+                        <div class="card-body">
+                            <h5 class="card-title my-0">e-UMKM</h5>
+                            <a href="#" data-toggle="modal" data-target="#modal-website">
+                                <button class="btn btn-sm btn-outline-warning py-0">In Development</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -195,7 +207,7 @@
     <!-- End Footer -->
 
     <!-- Modal Notif -->
-    <!-- <div class="modal fade text-dark" id="modal-website" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+    <div class="modal fade text-dark" id="modal-website" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -209,7 +221,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- End Modal Notif -->
 
     <!-- Back to top -->
@@ -230,10 +242,10 @@
     <script>
         AOS.init();
 
-        // $('#modal-website').on('show.bs.modal', event => {
-        //     let button = $(event.relatedTarget);
-        //     let modal = $(this);
-        // });
+        $('#modal-website').on('show.bs.modal', event => {
+            let button = $(event.relatedTarget);
+            let modal = $(this);
+        });
     </script>
 </body>
 
